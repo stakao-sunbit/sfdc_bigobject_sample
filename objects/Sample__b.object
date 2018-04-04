@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <!-- Release Status -->
+    <deploymentStatus>Deployed</deploymentStatus>
+
+    <!-- Fields -->
+    <fields>
+       <fullName>Name__c</fullName>
+        <label>Text Sample</label>
+        <length>20</length>
+        <required>True</required>
+        <type>Text</type>
+        <unique>False</unique>
+    </fields>
+    <fields>
+       <fullName>Pick_List__c</fullName>
+        <label>Pick List Sample</label>
+        <length>20</length>
+        <required>True</required>
+        <type>Text</type>
+        <unique>False</unique>
+    </fields>
+    <fields>
+       <fullName>Long_Text__c</fullName>
+        <label>Long Text Area Sample</label>
+        <length>32768</length>
+        <required>False</required>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+        <unique>False</unique>
+    </fields>
+    <fields>
+        <fullName>Number__c</fullName>
+        <label>Number Sample</label>
+        <required>False</required>
+        <type>Number</type>
+        <unique>False</unique>
+        <precision>16</precision>
+        <scale>2</scale>
+    </fields>
+    <fields>
+       <fullName>Date__c</fullName>
+        <label>Date Sample</label>
+        <required>false</required>
+        <type>DateTime</type>
+        <unique>False</unique>
+    </fields>
+    <fields>
+       <fullName>Date_Time__c</fullName>
+        <label>Date Time Sample</label>
+        <required>True</required>
+        <type>DateTime</type>
+        <unique>False</unique>
+    </fields>
+    <fields>
+       <fullName>Account__c</fullName>
+        <label>Look Up Sample</label>
+        <relationshipName>look_up_sample</relationshipName>
+        <referenceTo>Account</referenceTo>
+        <required>True</required>
+        <type>Lookup</type>
+        <unique>False</unique>
+    </fields>
+
+    <!-- Indexes -->
+    <indexes>
+        <fullName>Sample_Index</fullName>
+        <label>Text Sample Index</label>
+        <fields>
+            <name>Name__c</name>
+            <sortDirection>ASC</sortDirection>
+        </fields>
+        <fields>
+            <name>Account__c</name>
+            <sortDirection>ASC</sortDirection>
+        </fields>
+        <fields>
+            <name>Date_Time__c</name>
+            <sortDirection>DESC</sortDirection>
+        </fields>
+    </indexes>
+
+    <!-- APIName/Labe -->
+    <!--<fullName>Sample</fullName>-->
+    <label>Big Object Sample</label>
+    <pluralLabel>Big Object Samples</pluralLabel>
+
+</CustomObject>
